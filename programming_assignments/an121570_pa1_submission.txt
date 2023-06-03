@@ -1,0 +1,35 @@
+COP3502C Programming Assignment 1
+Anthony Sevarino
+
+Problem 1:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct present {
+char *present_name;
+float price;
+};
+
+struct present* delete_present_list(struct present* present_list, int num){
+    int i = 0;
+    //note: ok fine
+    if(present_list == NULL){
+        return 0;
+    }
+    while(i < num){
+        free(present_list[i].present_name);
+        i++;
+    }
+    free(present_list);
+}
+
+int main(){
+    //this assignment does not have a main function
+}
+
+Problem 2:
+
+Linked List becomes: 
+head > 3 > 1 > 2 > 4 > 5 > 6 > 7 > NULL
+
