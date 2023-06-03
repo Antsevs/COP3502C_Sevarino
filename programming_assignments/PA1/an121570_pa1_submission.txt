@@ -22,6 +22,8 @@ struct present* delete_present_list(struct present* present_list, int num){
         i++;
     }
     free(present_list);
+
+    return NULL;
 }
 
 int main(){
