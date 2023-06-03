@@ -1,3 +1,4 @@
-This is my git repository for my COP 3502C course in the Summer of 2023 at the University of Central Florida.
+**Welcome**
 
+This repository serves as my submission for UCF's COP3502C 2023 Summer Course
 The repository is locally on my deksotp and I use a git bash terminal in order to update it online.
