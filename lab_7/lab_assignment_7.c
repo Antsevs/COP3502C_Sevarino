@@ -12,10 +12,11 @@ void bubbleSort(int arr[], int n)
     printf("\nUsing Bubble sort\n\n");
 
     int i, j, temp;
-    int swaps = 0; 
+    int swaps = 0; // Variable to count the number of swaps
+
     for (i = 0; i < n - 1; i++)
     {
-        swaps = 0;
+        swaps = 0; // Reset the swap count for each iteration
         printf("Iteration #%d\n", i + 1);
         
         for (j = 0; j < n - i - 1; j++)
@@ -25,15 +26,16 @@ void bubbleSort(int arr[], int n)
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
-                swap++;
+                swaps++; // Increment the swap count
             }
         }
         
         printArray(arr, n);
-        printf("Number of swaps: %d\n", swap);
+        printf("Number of swaps: %d\n", swaps);
         
-        if (swap == 0)
+        if (swaps == 0)
         {
+            // If no swaps occurred in the current iteration, the array is already sorted
             break;
         }
     }
@@ -49,8 +51,8 @@ void printArray(int arr[], int size)
 
 int main()
 {
-    int arr[] = {97,16,45,63,13,22,7,58,72};
-    int n = 9;
+    int arr[] = {97, 16, 45, 63, 13, 22, 7, 58, 72};
+    int n = 9; // Size of the array
 
     printf("Array before sorting: \n");
     printArray(arr, n);
